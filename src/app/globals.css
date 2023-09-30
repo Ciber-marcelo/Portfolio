@@ -12,8 +12,16 @@
   @apply mx-auto w-full max-w-[1200px] px-6
 }
 
-.color1 {
-  @apply text-emerald-400
+.color1text {
+  @apply text-blue-400
+}
+
+.color1bg {
+  @apply bg-blue-900/80
+}
+
+.color2bg {
+  @apply bg-blue-600
 }
 
 /*
