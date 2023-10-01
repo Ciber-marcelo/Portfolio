@@ -1,38 +1,57 @@
 import Image from 'next/image';
 import { technologies } from './technologies';
 import { Button } from '../button';
-
+import { HiArrowNarrowRight } from 'react-icons/hi'
+import { contacts } from './contacts';
+import { url } from 'inspector';
 export { technologies } from './technologies';
+export { contacts } from './contacts';
 
 export function HeroSection() {
    return (
       <div className='container flex items-start justify-between lg:flex-row flex-col-reverse '>
          <div className='w-full lg:max-w-[530px]'>
-            <p className='font-mono color1text'>Olá, meu nome é</p>
+            <p className='font-mono text-color1text'>Olá, meu nome é</p>
             <h2 className='text-4xl font-medium mt-2'>Marcelo Meira</h2>
 
             <p className='text-gray-400 my-6'>
-               Olá, meu nome é <b className='text-gray-50'>Marcelo Meira</b> e sou um desenvolveodr front-end
-               apaixonado por tecnologia. Com mais de <b className='text-gray-50'>1 ano de experiência</b>.
-               Meu objetivo é criar interfaces de usuário bonitas e funcionais, além de liderar equipes técnicas
-               em projetos desafiadores. Estou sepre aberto a novas oportunidades e desafios.
+               Olá, meu nome é <b className='text-gray-50'>Marcelo Meira</b> e sou um desenvolvedor full-stack
+               JavaScript. Com mais de <b className='text-gray-50'>1 ano de experiência</b>.
+               Meu objetivo é criar interfaces web/mobile bonitas e funcionais, além de participar de equipes técnicas
+               em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.
             </p>
 
             <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
                {technologies.map((item) => (
-                  <span key={item.name} className='color1text color1bg text-sm py-1 px-3 rounded-lg'>
+                  <span key={item.id} className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'>
                      {item.name}
                   </span>
                ))}
             </div>
 
-            <div>
-               <Button name='Entre em contato'></Button>
+            <div className='mt-10 flex gap-5 flex-col lg:flex-row'>
+               <Button onClick=''>
+                  Entre em contato
+                  <HiArrowNarrowRight size='18' />
+               </Button>
+
+               <div className='text-2xl text-gray-600 flex items-center gap-3'>
+                  {contacts.map((item) => (
+                     <a 
+                        className='hover:text-gray-100 transition-all'
+                        href={item.url} 
+                        key={item.id} 
+                        target='blank'
+                     > 
+                        {item.icon}
+                     </a>
+                  ))}
+               </div>
             </div>
          </div>
 
          <Image
-            className='min-w-[420px] rounded-lg'
+            className='w-[300px] lg:w-[420px] rounded-lg object-cover'
             width={420}
             height={420}
             src='/killua.jpg'

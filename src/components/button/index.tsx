@@ -1,24 +1,28 @@
 type ButtonProps = {
-   name: string
+  children: any
+  onClick: any
 }
 
-export function Button({ name }: ButtonProps) {
+export function Button({ children, onClick }: ButtonProps) {
   return (
-    <button className='
-         color2bg
-         py-3 
-         px-4 
-         rounded-lg 
-         text-gray-50 
-         flex 
-         justify-center 
-         items-center 
-         gap-2 
-         hover:color1bg 
-         transition-all 
-         disabled:opacity-50
+    <button 
+      onClick={onClick}
+      className='
+        bg-color2bg
+        py-3 
+        px-4 
+        rounded-lg 
+        text-gray-50 
+        flex 
+        justify-center 
+        items-center 
+        gap-2 
+        hover:bg-color1bg
+        transition-all 
+        disabled:opacity-50
+        shadow-button
    '>
-      {name}
+      {children}
     </button>
   )
 }

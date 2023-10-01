@@ -29,7 +29,7 @@ export function Header() {
       <div className='container flex items-center justify-between h-24'>
          <Link href="/">
             <Image 
-               className='color1bg rounded-lg'
+               className='bg-color1bg rounded-lg'
                width={58}
                height={58}
                src={logo}
@@ -44,7 +44,7 @@ export function Header() {
                   key={item.label}
                   className={pathname === item.href ? 'text-gray-50' : 'text-gray-400'}
                >
-                  <span className='color1text'># </span>
+                  <span className='text-color1text'># </span>
                   {item.label}
                </Link>
             ))}         
