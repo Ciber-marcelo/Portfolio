@@ -9,7 +9,7 @@ export { contacts } from './contacts';
 
 export function HeroSection() {
    return (
-      <div className='container flex items-start justify-between lg:flex-row flex-col-reverse '>
+      <div className='container flex items-start justify-between lg:flex-row flex-col-reverse py-10 gap-y-6'>
          <div className='w-full lg:max-w-[530px]'>
             <p className='font-mono text-color1text'>Olá, meu nome é</p>
             <h2 className='text-4xl font-medium mt-2'>Marcelo Meira</h2>
