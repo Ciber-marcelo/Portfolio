@@ -2,7 +2,6 @@
 'use client'
 
 import Image from 'next/image';
-import logo from '../../../public/M.svg';
 import Link from 'next/link';
 //"usePathname" serve para pegar o nome do href da pagina atual
 import { usePathname } from 'next/navigation';
@@ -32,7 +31,7 @@ export function Header() {
                className='bg-color1bg rounded-lg'
                width={58}
                height={58}
-               src={logo}
+               src='/M.svg'
                alt='Logo Marcelo'
             />
          </Link>
