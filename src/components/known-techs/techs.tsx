@@ -32,13 +32,13 @@ export const techs = [
    {  
       id: 4,   
       techName: "TypeScript",
-      exp: '1 ano',
+      exp: '2 anos',
       icon: <TbBrandTypescript size='50'/>
    },
    {  
       id: 5,   
       techName: "React.js",
-      exp: '1 ano',
+      exp: '2 anos',
       icon: <TbBrandReact size='50'/>
    },
    {  

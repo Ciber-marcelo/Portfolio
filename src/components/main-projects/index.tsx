@@ -6,7 +6,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 
 export function MainProjects() {
    return (
-      <div className="container py-10">
+      <div className="container py-16">
          <SectionTitle title='Projetos em destaque' subTitle='destaques' />
          <HorizontalDivider />
          {projects.map((item) => (

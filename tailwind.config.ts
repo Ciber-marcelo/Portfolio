@@ -12,10 +12,17 @@ const config: Config = {
     },
     extend: {
       colors: {
-        color1text: 'rgb(34 211 238 / var(--tw-text-opacity))', //text-cyan-400
-        color1bg: 'rgb(22 78 99 / 0.8)', //bg-cyan-900/80
-        color2bg: 'rgb(8 145 178 / var(--tw-bg-opacity))',//bg-cyan-600
+        color1text: '#22d3ee', //text-cyan-400
+        color1bg: '#164e63', //bg-cyan-900
+        color2bg: '#0891b2',//bg-cyan-600
+        color3bg: '#083344', //bg-cyan-950
       },
+      // colors: {
+      //   color1text: '#a78bfa', //text-violet-400
+      //   color1bg: '#4c1d95', //bg-violet-900
+      //   color2bg: '#7c3aed',//bg-violet-600
+      //   color3bg: '#2e1065', //bg-violet-950
+      // },
       fontFamily: {
         mono: ['var(--font-plex-mono)', 'monospace']
       },

@@ -4,7 +4,7 @@ import { works } from "./works";
 
 export function WorkExperience() {
    return (
-      <div className="container flex flex-col lg:flex-row justify-between py-10 gap-y-10">
+      <div className="container flex flex-col lg:flex-row justify-between py-16 gap-y-10">
          <div className="max-w-[420px]">
             <SectionTitle
                subTitle="experiências"

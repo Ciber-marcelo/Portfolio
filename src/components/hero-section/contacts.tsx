@@ -11,9 +11,9 @@ export const contacts = [
       url: 'https://www.linkedin.com/in/marcelo-meira-7a5564239/',
       icon: <TbBrandLinkedin />
    },
-   // {    
-   //    id: 3, 
-   //    url: '',
-   //    icon: <TbBrandWhatsapp />
-   // },
+   {    
+      id: 3, 
+      url: 'https://wa.me/5511966651973',
+      icon: <TbBrandWhatsapp />
+   },
 ];
