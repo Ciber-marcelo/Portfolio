@@ -1,5 +1,5 @@
 export function HorizontalDivider() {
    return (
-      <div className='w-full my-8 border-b-2 border-b-gray-800'/>
+      <div className='w-full h-[2px] my-8 bg-gray-800'/>
    )
 }

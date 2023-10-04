@@ -4,7 +4,7 @@ import { BsFillSquareFill } from 'react-icons/bs'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
 
-type ProjectCardProps = {
+type ProjectItensProps = {
    image: string
    title: string
    text: string
@@ -12,7 +12,7 @@ type ProjectCardProps = {
    technologies: string[]
 }
 
-export function ProjectItem({ image, title, text, link, technologies }: ProjectCardProps) {
+export function ProjectItem({ image, title, text, link, technologies }: ProjectItensProps) {
    return (
       <div>
          <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">

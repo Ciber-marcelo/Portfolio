@@ -15,10 +15,6 @@ const NAV_ITEMS = [
      label: 'Projetos',
      href: '/projects',
    },
-   {
-      label: 'Teste',
-      href: '/teste',
-    },
  ]
 
 export function Header() {
