@@ -1,5 +1,5 @@
 import { Card } from "../card";
-import { SectionTitle } from "../sectionTitle";
+import { SectionTitle } from "../section-title";
 import { techs } from "./techs";
 
 export function KnownTechs() {

@@ -1,6 +1,7 @@
-import { HeroSection } from "@/components/heroSection";
-import { KnownTechs } from "@/components/knownTechs";
-import { MainProjects } from "@/components/mainProjects";
+import { HeroSection } from "@/components/hero-section";
+import { KnownTechs } from "@/components/known-techs";
+import { MainProjects } from "@/components/main-projects";
+import { WorkExperience } from "@/components/work-experience";
 
 export default function Home() { 
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <KnownTechs />
       <MainProjects />
+      <WorkExperience />
     </>
   )
 }

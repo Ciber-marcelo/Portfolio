@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HorizontalDivider } from "../horizontalDivider";
+import { HorizontalDivider } from "../horizontal-divider";
 import { BsFillSquareFill } from 'react-icons/bs'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
@@ -12,7 +12,7 @@ type ProjectCardProps = {
    technologies: string[]
 }
 
-export function ProjectCard({ image, title, text, link, technologies }: ProjectCardProps) {
+export function ProjectItem({ image, title, text, link, technologies }: ProjectCardProps) {
    return (
       <div>
          <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
@@ -43,7 +43,7 @@ export function ProjectCard({ image, title, text, link, technologies }: ProjectC
                </div>
 
                <a 
-                  className="flex gap-3 items-center hover:text-color1text transition" 
+                  className="flex gap-2 items-center hover:text-color1text transition" 
                   href={link} 
                   target='blank'
                >
