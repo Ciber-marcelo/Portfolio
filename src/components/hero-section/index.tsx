@@ -54,7 +54,7 @@ export function HeroSection() {
                className='w-[300px] lg:w-[420px] rounded-lg object-cover'
                width={420}
                height={420}
-               src='/foto-perfil3.png'
+               src='/foto-perfil.png'
                alt='Foto de perfil do Marcelo'
             />
          </div>
