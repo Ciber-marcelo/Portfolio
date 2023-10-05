@@ -12,7 +12,7 @@ export function WorkExperience() {
             />
             <p className="text-gray-400 mt-6">
                Estou sempre aberto a novos desafios e projetos. Vamos
-               trabalhar juntos para criar soluções incríveis para sua empresa!
+               trabalhar juntos para criar soluções incríveis para sua empresa !
             </p>
          </div>
 
@@ -20,7 +20,7 @@ export function WorkExperience() {
             {works.map((item) => (
                <ExperienceItem
                   key={item.id}
-                  image={item.image}
+                  initial={item.initial}
                   companyName={item.companyName}
                   officeName={item.officeName}
                   time={item.time}

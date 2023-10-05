@@ -25,7 +25,7 @@ export function Header() {
          <div className='container flex items-center justify-between h-24'>
             <Link href="/">
                <Image
-                  className='bg-color1bg rounded-lg'
+                  className='bg-color1bg rounded-full p-2'
                   width={58}
                   height={58}
                   src='/M.svg'

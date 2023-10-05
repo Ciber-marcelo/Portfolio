@@ -3,7 +3,6 @@ import { technologies } from './technologies';
 import { Button } from '../button';
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { contacts } from './contacts';
-import { url } from 'inspector';
 export { technologies } from './technologies';
 export { contacts } from './contacts';
 
@@ -55,7 +54,7 @@ export function HeroSection() {
                className='w-[300px] lg:w-[420px] rounded-lg object-cover'
                width={420}
                height={420}
-               src='/killua.jpg'
+               src='/foto-perfil3.png'
                alt='Foto de perfil do Marcelo'
             />
          </div>

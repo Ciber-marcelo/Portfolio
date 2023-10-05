@@ -1,30 +1,25 @@
-import Image from "next/image";
-
 type ExperienceProps = {
-   image: string
    companyName: string
+   initial: string
    officeName: string
    time: string
    text: string
    technologies: string[]
 }
 
-export function ExperienceItem({ image, companyName, officeName, time, text, technologies }: ExperienceProps) {
+export function ExperienceItem({ companyName, initial, officeName, time, text, technologies }: ExperienceProps) {
    return (
       <div className="grid grid-cols-[40px,1fr] gap-4">
          <div className=" w-12 flex flex-col items-center gap-4">
-            <Image
-               className='rounded-full border-[2px] border-gray-500'
-               src={image}
-               alt={`Thumbnail da empresa ${companyName}`}
-               width={40}
-               height={40}
-            />
+            <span className="flex p-2 justify-center items-center h-[40px] w-[40px] rounded-full border-[2px] bg-color3bg text-gray-500 border-gray-500 font-medium">
+               {initial}
+            </span>
+
             <div className='h-full w-[2px] bg-gray-800' />
          </div>
 
          <div className="flex flex-col gap-2">
-            <p className="text-gray-500">@ {companyName}</p>
+            <p className="text-gray-500">{companyName}</p>
             <h4 className="text-gray-300">{officeName}</h4>
             <p className="text-gray-500">{time}</p>
             <p className="text-gray-400">{text}</p>
