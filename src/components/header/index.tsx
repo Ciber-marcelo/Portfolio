@@ -1,4 +1,4 @@
-//"use client serve para fazer alguns recursoso no next funcionar, exemplo: usePathName"
+//"use client" serve para fazer alguns recursoso funcionarem no next, exemplo: "usePathName"
 'use client'
 
 import Image from 'next/image';
