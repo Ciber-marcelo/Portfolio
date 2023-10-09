@@ -1,6 +1,6 @@
 type ButtonProps = {
   children: any
-  onClick: any
+  onClick?: any
 }
 
 export function Button({ children, onClick }: ButtonProps) {

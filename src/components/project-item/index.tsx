@@ -42,13 +42,13 @@ export function ProjectItem({ image, title, text, link, technologies }: ProjectI
                   ))}
                </div>
 
-               <a 
-                  className="flex gap-2 items-center hover:text-color1text transition" 
-                  href={link} 
+               <a
+                  className="flex gap-2 items-center hover:text-color1text transition"
+                  href={link}
                   target='blank'
                >
                   Ver projeto
-                  <HiArrowNarrowRight size={20}/>
+                  <HiArrowNarrowRight size={20} />
                </a>
             </div>
          </div>

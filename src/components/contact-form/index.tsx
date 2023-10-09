@@ -3,10 +3,17 @@
 
 import { Button } from "../button";
 import { SectionTitle } from "../section-title";
-import { HiArrowNarrowRight } from 'react-icons/hi'
-// import { useForm } from "react-hook-useForm"
+import { HiArrowNarrowRight } from 'react-icons/hi';
+//hook usado para "facilitar" o uso de formularios
+import { useForm } from 'react-hook-form';
 
 export function ContactForm() {
+   const { register, handleSubmit } = useForm();
+
+   function ttt(data: any) {
+      console.log(data)
+   }
+
    return (
       <div className="flex py-16 px-6 justify-center items-center bg-gray-950">
          <div className="max-w-[420px]">
@@ -15,7 +22,10 @@ export function ContactForm() {
                subTitle="contato"
             />
 
-            <form className="flex flex-col gap-4 pt-10">
+            <form
+               onSubmit={handleSubmit(ttt)}
+               className="flex flex-col gap-4 pt-10"
+            >
                <input
                   className="
                   w-full 
@@ -30,6 +40,7 @@ export function ContactForm() {
                   ring-color1bg
                "
                   placeholder="Nome"
+                  {...register('name', { required: true })}
                />
 
                <input
@@ -46,6 +57,7 @@ export function ContactForm() {
                   ring-color1bg
                "
                   placeholder="E-mail"
+                  {...register('email', { required: true })}
                />
 
                <textarea
@@ -64,10 +76,11 @@ export function ContactForm() {
                "
                   placeholder="Mensagem"
                   maxLength={500}
+                  {...register('message', { required: true })}
                />
 
                <div className="flex flex-col justify-center mt-6">
-                  <Button onClick=''>
+                  <Button>
                      Enviar mensagem
                      <HiArrowNarrowRight size={18} />
                   </Button>

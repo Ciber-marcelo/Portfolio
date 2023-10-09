@@ -30,7 +30,7 @@ export function HeroSection() {
                </div>
 
                <div className='mt-10 flex gap-5 flex-col lg:flex-row'>
-                  <Button onClick=''>
+                  <Button>
                      Entre em contato
                      <HiArrowNarrowRight size='18' />
                   </Button>
