@@ -1,18 +1,26 @@
 import Image from "next/image";
 import { HorizontalDivider } from "../horizontal-divider";
 import { BsFillSquareFill } from 'react-icons/bs'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import { TbBrandGithub } from 'react-icons/tb'
+import { FiGlobe } from 'react-icons/fi'
 
+import { Button } from "../button";
 
 type ProjectItensProps = {
    image: string
    title: string
    text: string
    link: string
+   repo: string
    technologies: string[]
 }
 
-export function ProjectItem({ image, title, text, link, technologies }: ProjectItensProps) {
+export function ProjectItem({ image, title, text, link, repo, technologies }: ProjectItensProps) {
+
+   function meu() {
+      console.log('kkkk')
+   }
+
    return (
       <div>
          <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
@@ -42,14 +50,22 @@ export function ProjectItem({ image, title, text, link, technologies }: ProjectI
                   ))}
                </div>
 
-               <a
-                  className="flex gap-2 items-center hover:text-color1text transition"
-                  href={link}
-                  target='blank'
-               >
-                  Ver projeto
-                  <HiArrowNarrowRight size={20} />
-               </a>
+               <div className="flex flex-col sm:flex-row gap-4">
+                  <a className="flex flex-col" href={repo} target='blank'>
+                     <Button>
+                        <TbBrandGithub size={18} />
+                        Repositôrio
+                     </Button>
+                  </a>
+
+                  <a className="flex flex-col" href={link} target='blank'>
+                     <Button>
+                        <FiGlobe size={18} />
+                        Projeto Online
+                     </Button>
+                  </a>
+               </div>
+
             </div>
          </div>
          <HorizontalDivider />
