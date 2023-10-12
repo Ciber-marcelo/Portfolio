@@ -3,8 +3,6 @@ import { technologies } from './technologies';
 import { Button } from '../button';
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { contacts } from './contacts';
-export { technologies } from './technologies';
-export { contacts } from './contacts';
 
 export function HeroSection() {
    return (
@@ -17,7 +15,7 @@ export function HeroSection() {
                <p className='text-gray-400 my-6'>
                   Olá, meu nome é <b className='text-gray-50'>Marcelo Meira</b> e sou um desenvolvedor full-stack
                   JavaScript. Com mais de <b className='text-gray-50'>2 anos de experiência</b>.
-                  Meu objetivo é criar interfaces web/mobile bonitas e funcionais, além de participar de equipes técnicas
+                  Meu objetivo é criar interfaces web/mobile funcionais, além de participar de equipes técnicas
                   em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.
                </p>
 
@@ -30,7 +28,7 @@ export function HeroSection() {
                </div>
 
                <div className='mt-10 flex gap-5 flex-col lg:flex-row'>
-                  <Button>
+                  <Button className='shadow-button'>
                      Entre em contato
                      <HiArrowNarrowRight size='18' />
                   </Button>

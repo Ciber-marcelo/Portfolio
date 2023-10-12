@@ -1,14 +1,14 @@
-type ButtonProps = {
-  children: any
-  onClick?: any
-}
+import { ButtonHTMLAttributes } from 'react'
 
-export function Button({ children, onClick }: ButtonProps) {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
+
+export function Button({ children, className, ...props }: ButtonProps) {
   return (
-    <button 
-      onClick={onClick}
-      className='
-        bg-color2bg
+    <button
+      className={(
+        `
+        bg-color2bg 
+        min-w-[170px] 
         py-3 
         px-4 
         rounded-lg 
@@ -16,12 +16,15 @@ export function Button({ children, onClick }: ButtonProps) {
         flex 
         justify-center 
         items-center 
-        gap-2 
-        hover:bg-color1bg
+        gap-2  
+        hover:bg-color1bg 
         transition-all 
-        disabled:opacity-50
-        shadow-button
-   '>
+        disabled:opacity-50 
+        ${className}
+        `
+      )}
+      {...props}
+    >
       {children}
     </button>
   )
