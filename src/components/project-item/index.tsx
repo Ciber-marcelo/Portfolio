@@ -28,8 +28,8 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
                className="w-full h-[200px] lg:w-[420px] lg:h-[300px] object-cover rounded-lg"
                src={image}
                alt={`Thumbnail do projeto ${title}`}
-               width={420}
-               height={300}
+               width={1400}
+               height={1000}
             />
 
             <div className="flex flex-col gap-6">
