@@ -49,7 +49,7 @@ export function HeroSection() {
             </div>
 
             <Image
-               className='w-[300px] lg:w-[420px] rounded-lg object-cover'
+               className='w-[300px] h-[300px] lg:w-[420px] lg:h-[420px] rounded-lg object-cover'
                width={420}
                height={420}
                src='/foto-perfil.png'

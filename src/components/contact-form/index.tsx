@@ -6,12 +6,27 @@ import { SectionTitle } from "../section-title";
 import { HiArrowNarrowRight } from 'react-icons/hi';
 //hook usado para "facilitar" o uso de formularios
 import { useForm } from 'react-hook-form';
+import axios from "axios";
+import toast from "react-hot-toast";
+
+type ContactFormSchema = {
+   name: string
+   email: string
+   message: string
+}
 
 export function ContactForm() {
-   const { register, handleSubmit } = useForm();
+   const { register, handleSubmit, reset, formState: {isSubmitting} } = useForm<ContactFormSchema>();
 
-   function ttt(data: any) {
-      console.log(data)
+   async function onSubimit(data: ContactFormSchema) {
+      try{
+         await axios.post('apiDiscord', data)
+         toast.success('Mensagem enviada com sucesso!')
+         reset()
+      }catch{
+         toast.error('Ocorreu um erro ao enviar a mensagem.')
+      }
+      // console.log(data)
    }
 
    return (
@@ -23,7 +38,7 @@ export function ContactForm() {
             />
 
             <form
-               onSubmit={handleSubmit(ttt)}
+               onSubmit={handleSubmit(onSubimit)}
                className="flex flex-col gap-4 pt-10"
             >
                <input
@@ -80,7 +95,7 @@ export function ContactForm() {
                />
 
                <div className="flex flex-col justify-center mt-6">
-                  <Button>
+                  <Button className='shadow-button' disabled={isSubmitting}>
                      Enviar mensagem
                      <HiArrowNarrowRight size={18} />
                   </Button>
