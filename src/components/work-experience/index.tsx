@@ -1,6 +1,6 @@
 import { SectionTitle } from "../section-title";
 import { ExperienceItem } from "./experience-item";
-import { works } from "./works";
+import { works } from "../../../public/jsons/works";
 
 export function WorkExperience() {
    return (

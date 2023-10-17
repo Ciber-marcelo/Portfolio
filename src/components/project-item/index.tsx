@@ -7,7 +7,7 @@ import { FiGlobe } from 'react-icons/fi'
 import { Button } from "../button";
 
 type ProjectItensProps = {
-   image: string
+   image: any
    title: string
    text: string
    link: string

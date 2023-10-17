@@ -28,7 +28,7 @@ export function Header() {
                   className='bg-color1bg rounded-full p-2'
                   width={58}
                   height={58}
-                  src='/M.svg'
+                  src='/images/M.svg'
                   alt='Logo Marcelo'
                />
             </Link>

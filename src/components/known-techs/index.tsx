@@ -1,6 +1,6 @@
 import { Card } from "../card";
 import { SectionTitle } from "../section-title";
-import { techs } from "./techs";
+import { techs } from "../../../public/jsons/techs";
 
 export function KnownTechs() {
    return (

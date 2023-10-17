@@ -1,10 +1,10 @@
 'use client'
 
 import Image from 'next/image';
-import { technologies } from './technologies';
+import { technologies } from '../../../public/jsons/technologies';
+import { contacts } from '../../../public/jsons/contacts';
 import { Button } from '../button';
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import { contacts } from './contacts';
 
 export function HeroSection() {
 
@@ -59,7 +59,7 @@ export function HeroSection() {
                className='w-[300px] h-[300px] lg:w-[420px] lg:h-[420px] rounded-lg object-cover'
                width={420}
                height={420}
-               src='/foto-perfil.png'
+               src='/images/foto-perfil.png'
                alt='Foto de perfil do Marcelo'
             />
          </div>
