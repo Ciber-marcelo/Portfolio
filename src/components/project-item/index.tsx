@@ -16,16 +16,11 @@ type ProjectItensProps = {
 }
 
 export function ProjectItem({ image, title, text, link, repo, technologies }: ProjectItensProps) {
-
-   function meu() {
-      console.log('kkkk')
-   }
-
    return (
       <div>
          <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
             <Image
-               className="w-full h-[200px] lg:w-[420px] lg:h-[300px] object-cover rounded-lg"
+               className="w-full h-[200px] lg:w-[420px] lg:h-[300px] object-cover rounded-lg border-4 border-color2bg"
                src={image}
                alt={`Thumbnail do projeto ${title}`}
                width={1400}
