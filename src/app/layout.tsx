@@ -5,6 +5,7 @@ import { Inter, IBM_Plex_Mono } from 'next/font/google'
 import { ContactForm } from '@/components/contact-form'
 import { Footer } from '@/components/footer'
 import { Toaster } from '@/components/toaster'
+import { BackToTop } from '@/components/back-to-top'
 
 const inter = Inter({ 
   variable: '--font-inter',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${plexMono.variable}`}>
       <body>
         <Toaster />
+        <BackToTop />
         <Header/>
         {children}
         <ContactForm />

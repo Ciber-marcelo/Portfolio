@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 import { technologies } from './technologies';
 import { Button } from '../button';
@@ -5,9 +7,14 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 import { contacts } from './contacts';
 
 export function HeroSection() {
+
+   function scrollToBottom() {
+      window.scrollTo({ top: 10000, behavior: "smooth" })
+   }
+
    return (
       <div className='bg-gradient-to-r from-gray-950 via-gray-900 to-color3bg'>
-         <div className='container flex items-start justify-between lg:flex-row flex-col-reverse py-16 gap-y-6'>
+         <div className='container flex items-start justify-between lg:flex-row flex-col-reverse py-32 gap-y-6'>
             <div className='w-full lg:max-w-[530px]'>
                <p className='font-mono text-color1text'>Olá, meu nome é</p>
                <h2 className='text-4xl font-medium mt-2'>Marcelo Meira</h2>
@@ -28,7 +35,7 @@ export function HeroSection() {
                </div>
 
                <div className='mt-10 flex gap-5 flex-col lg:flex-row'>
-                  <Button className='shadow-button'>
+                  <Button className='shadow-button' onClick={scrollToBottom}>
                      Entre em contato
                      <HiArrowNarrowRight size='18' />
                   </Button>
