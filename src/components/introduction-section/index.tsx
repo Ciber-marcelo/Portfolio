@@ -3,7 +3,7 @@ import { HiArrowNarrowLeft } from 'react-icons/hi'
 export function IntroductionSection() {
    return (
       <div className='bg-gradient-to-r from-gray-950 via-gray-900 to-color3bg'>
-         <div className='container flex justify-center py-16'>
+         <div className='container flex justify-center pt-16 pb-32'>
             <div className='w-full sm:max-w-[540px]'>
                <p className='font-mono text-color1text flex justify-center'>
                   Projetos

@@ -8,7 +8,6 @@ export function Button({ children, className, ...props }: ButtonProps) {
       className={(
         `
         bg-color2bg 
-        min-w-[170px] 
         py-3 
         px-4 
         rounded-lg 

@@ -5,7 +5,7 @@ import { projects } from '../../../public/jsons/projects'
 
 export function AllProjects() {
    return (
-      <div className="container py-16">
+      <div className="container py-32">
          <SectionTitle title='Principais Projetos' subTitle='projetos' />
          <HorizontalDivider />
          {projects.map((item) => (

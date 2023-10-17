@@ -52,14 +52,14 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
 
                <div className="flex flex-col sm:flex-row gap-4">
                   <a className="flex flex-col" href={repo} target='blank'>
-                     <Button>
+                     <Button className="min-w-[170px]">
                         <TbBrandGithub size={18} />
                         Repositôrio
                      </Button>
                   </a>
 
                   <a className="flex flex-col" href={link} target='blank'>
-                     <Button>
+                     <Button className="min-w-[170px]">
                         <FiGlobe size={18} />
                         Projeto Online
                      </Button>

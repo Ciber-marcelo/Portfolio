@@ -30,7 +30,7 @@ export function ContactForm() {
    }
 
    return (
-      <div className="flex py-16 px-6 justify-center items-center bg-gray-950">
+      <div className="flex pb-16 pt-32 px-6 justify-center items-center bg-gray-950">
          <div className="max-w-[420px]">
             <SectionTitle
                title="Vamos trabalhar juntos ? Entre em contato"
