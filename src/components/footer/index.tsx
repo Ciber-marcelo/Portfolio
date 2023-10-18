@@ -8,7 +8,7 @@ export function Footer() {
                className='bg-color1bg rounded-lg p-1'
                width={30}
                height={30}
-               src='/M.svg'
+               src='/images/M.svg'
                alt='Logo Marcelo'
             />
             Desenvolvido por Marcelones
