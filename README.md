@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <img 
+    alt="Logo" 
+    src="https://cdn.discordapp.com/attachments/794432010441064468/1164348483621376000/image.png?ex=6542e307&is=65306e07&hm=6ccadbacfc5926887b24242fd7db3a5810cc788c14c486ffc763af1995364dc9&"
+    width="100%"
+  >
+</h1>
 
-## Getting Started
+## Indice
 
-First, run the development server:
+- [Sobre](#sobre)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#Funcionalidades)
+- [Acessar portfolio](#Acessar-pportfólio)
+
+---
+
+## Sobre
+
+**Portfólio** é uma aplicação web utilizando Next e Tailwind, utilizando a API do Discord para o envio de formulários.
+
+---
+
+## Tecnologias utilizadas
+
+O projeto foi feito utilizando das seguintes tecnologias:
+
+- Next JS
+- Typescript
+- Tailwind
+- Axios
+- React-hook-form
+
+Instruções:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  # Compilar o projeto:
+  npm install
+
+  # Rodar o projeto:
+  npm run dev 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Listagem de tecnologias conhecidas, projetos e Experiência Profissional
 
-## Learn More
+- Envio de formulário utilizando a API do Discord
 
-To learn more about Next.js, take a look at the following resources:
+- Aplicação 100% responsiva
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acessar portfólio
 
-## Deploy on Vercel
+Segue o link para acessar o projeto: [Portfólio](https://portfolio-marcelones.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Desenvlvido por Marcelones
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+
