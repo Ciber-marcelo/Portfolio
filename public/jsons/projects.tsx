@@ -20,7 +20,7 @@ export const projects = [
       id: 2,
       image: portfolio,
       title: 'Portfólio',
-      text: 'Portfólio é uma aplicação web utilizando Next e Tailwind, utilizando a API do Discord para o envio de formulários.',
+      text: 'Portfólio é uma aplicação web utilizando Next e Tailwind, usando a API do Discord para o envio de formulários.',
       repo: 'https://github.com/Ciber-marcelo/portfolio',
       link: 'https://portfolio-marcelones.vercel.app/',
       technologies: [
