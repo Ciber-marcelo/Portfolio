@@ -11,7 +11,7 @@
 - [Sobre](#sobre)
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#Funcionalidades)
-- [Acessar portfólio](#Acessar-portfólio)
+- [Acessar portfolio](#Acessar-portfolio)
 
 ---
 
@@ -53,7 +53,7 @@ Instruções:
 
 ---
 
-## Acessar portfólio
+## Acessar portfolio
 
 Segue o link para acessar o projeto: [Portfólio](https://portfolio-marcelones.vercel.app/)
 
