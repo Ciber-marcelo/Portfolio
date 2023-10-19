@@ -17,7 +17,7 @@
 
 ## Sobre
 
-**Portfólio** é uma aplicação web utilizando Next e Tailwind, utilizando a API do Discord para o envio de formulários.
+**Portfólio** é uma aplicação web utilizando Next e Tailwind, usando a API do Discord para o envio de formulários.
 
 ---
 
