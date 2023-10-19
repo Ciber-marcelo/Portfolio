@@ -11,7 +11,7 @@
 - [Sobre](#sobre)
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#Funcionalidades)
-- [Acessar portfolio](#Acessar-pportfólio)
+- [Acessar portfólio](#Acessar-portfolio)
 
 ---
 
