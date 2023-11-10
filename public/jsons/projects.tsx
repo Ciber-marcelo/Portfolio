@@ -28,7 +28,8 @@ export const projects = [
          'TypeScript', 
          'Tailwind.css',
          'Axios',
-         'React-hook-form'
+         'React-hook-form',
+         'Framer-motion'
       ]
    },
 ];

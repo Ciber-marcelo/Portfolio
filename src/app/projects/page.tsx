@@ -1,5 +1,5 @@
-import { IntroductionSection } from "@/components/introduction-section";
-import { AllProjects } from "@/components/project-all";
+import { IntroductionSection } from "@/components/Introduction-section";
+import { AllProjects } from "@/components/Project-all";
 import type { Metadata } from 'next'
 
 

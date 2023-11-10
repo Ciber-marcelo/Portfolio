@@ -1,7 +1,7 @@
-import { HeroSection } from "@/components/hero-section";
-import { KnownTechs } from "@/components/known-techs";
-import { MainProjects } from "@/components/project-main";
-import { WorkExperience } from "@/components/work-experience";
+import { HeroSection } from "@/components/Hero-section";
+import { KnownTechs } from "@/components/Known-techs";
+import { MainProjects } from "@/components/Project-main";
+import { WorkExperience } from "@/components/Work-experience";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

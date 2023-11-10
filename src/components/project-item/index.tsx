@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { HorizontalDivider } from "../horizontal-divider";
+import { HorizontalDivider } from "../Horizontal-divider";
 import { BsFillSquareFill } from 'react-icons/bs'
 import { TbBrandGithub } from 'react-icons/tb'
 import { FiGlobe } from 'react-icons/fi'
 
-import { Button } from "../button";
+import { Button } from "../Button";
 
 type ProjectItensProps = {
    image: any

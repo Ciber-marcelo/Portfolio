@@ -1,4 +1,4 @@
-import { SectionTitle } from "../section-title";
+import { SectionTitle } from "../Section-title";
 import { ExperienceItem } from "./experience-item";
 import { works } from "../../../public/jsons/works";
 
