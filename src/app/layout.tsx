@@ -1,10 +1,10 @@
 import './globals.css'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
-import { BackToTop } from '@/components/Back-to-top'
-import { Header } from '@/components/Header'
-import { ContactForm } from '@/components/Contact-form'
-import { Footer } from '@/components/Footer'
-import { Toaster } from '@/components/Toaster'
+import { BackToTop } from '@/components/back-to-top'
+import { Header } from '@/components/header'
+import { ContactForm } from '@/components/contact-form'
+import { Footer } from '@/components/footer'
+import { Toaster } from '@/components/toaster'
 
 const inter = Inter({ 
   variable: '--font-inter',

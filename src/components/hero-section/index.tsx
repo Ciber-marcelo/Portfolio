@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { technologies } from '../../../public/jsons/technologies';
 import { contacts } from '../../../public/jsons/contacts';
-import { Button } from '../Button';
+import { Button } from '../button';
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
 export function HeroSection() {

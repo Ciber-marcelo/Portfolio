@@ -1,8 +1,8 @@
 //"use client" serve para fazer alguns recursoso funcionarem no next, exemplo: o hook "useForm"
 'use client'
 
-import { Button } from "../Button";
-import { SectionTitle } from "../Section-title";
+import { Button } from "../button";
+import { SectionTitle } from "../section-title";
 import { HiArrowNarrowRight } from 'react-icons/hi';
 //hook usado para "facilitar" o uso de formularios
 import { useForm } from 'react-hook-form';

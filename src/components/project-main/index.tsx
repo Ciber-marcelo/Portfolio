@@ -1,6 +1,6 @@
-import { HorizontalDivider } from "../Horizontal-divider";
-import { ProjectItem } from "../Project-item";
-import { SectionTitle } from "../Section-title";
+import { HorizontalDivider } from "../horizontal-divider";
+import { ProjectItem } from "../project-item";
+import { SectionTitle } from "../section-title";
 import { projects } from '../../../public/jsons/projects'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 

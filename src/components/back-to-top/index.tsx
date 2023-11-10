@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from "../Button";
+import { Button } from "../button";
 import { TbArrowNarrowUp } from 'react-icons/tb'
 import { useState, useEffect, useCallback } from "react";
 
