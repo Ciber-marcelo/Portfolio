@@ -8,7 +8,7 @@ export function AllProjects() {
       <div className="container py-32">
          <SectionTitle title='Principais Projetos' subTitle='projetos' />
          <HorizontalDivider />
-         {projects.map((item) => (
+         {projects.toReversed().map((item) => (
             <ProjectItem
                key={item.id}
                image={item.image}
