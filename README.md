@@ -54,7 +54,7 @@ Segue o link para acessar o projeto: [Portfólio](https://portfolio-marcelones.v
 
 <br/>
 <div align="center">
-  Desenvlvido por Marcelones
+  Desenvolvido por Marcelones
 </div>
 
 
