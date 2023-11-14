@@ -9,7 +9,7 @@ export function MainProjects() {
       <div className="container py-16">
          <SectionTitle title='Projetos em destaque' subTitle='destaques' />
          <HorizontalDivider />
-         {projects.slice(-2).toReversed().map((item) => (
+         {projects.slice(-2).reverse().map((item) => (
             <ProjectItem 
                key={item.id}
                image={item.image}
