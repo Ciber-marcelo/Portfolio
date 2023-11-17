@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from "framer-motion"
+
 type ExperienceProps = {
    companyName: string
    initial: string
@@ -9,7 +13,13 @@ type ExperienceProps = {
 
 export function ExperienceItem({ companyName, initial, officeName, time, text, technologies }: ExperienceProps) {
    return (
-      <div className="grid grid-cols-[40px,1fr] gap-4">
+      <motion.div 
+         className="grid grid-cols-[40px,1fr] gap-4"
+         initial={{ opacity: 0, x: 100 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         exit={{ opacity: 0, x: 100 }}
+         transition={{ duration: 0.5 }}
+      >
          <div className=" w-12 flex flex-col items-center gap-4">
             <span className="flex p-2 justify-center items-center h-[40px] w-[40px] rounded-full border-[2px] bg-color3bg text-gray-500 border-gray-500 font-medium">
                {initial}
@@ -26,13 +36,20 @@ export function ExperienceItem({ companyName, initial, officeName, time, text, t
             <p className="text-gray-400 text-sm mt-6 font-semibold">Competências</p>
 
             <div className='flex flex-wrap gap-x-2 gap-y-3 mb-8 lg:max-w-[340px]'>
-               {technologies.map((item) => (
-                  <span key={item} className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'>
+               {technologies.map((item, i) => (
+                  <motion.span
+                     key={item}
+                     className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'
+                     initial={{ opacity: 0, scale: 0 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     exit={{ opacity: 0, scale: 0 }}
+                     transition={{ duration: 0.5, delay: i * 0.1 }}
+                  >
                      {item}
-                  </span>
+                  </motion.span>
                ))}
             </div>
          </div>
-      </div>
+      </motion.div>
    )
 }

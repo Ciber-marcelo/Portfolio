@@ -1,4 +1,3 @@
-//"use client" serve para fazer alguns recursoso funcionarem no next, exemplo: o hook "useForm"
 'use client'
 
 import { Button } from "../button";
@@ -8,6 +7,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { useForm } from 'react-hook-form';
 import axios from "axios";
 import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 
 type ContactFormSchema = {
    name: string
@@ -16,17 +16,16 @@ type ContactFormSchema = {
 }
 
 export function ContactForm() {
-   const { register, handleSubmit, reset, formState: {isSubmitting} } = useForm<ContactFormSchema>();
+   const { register, handleSubmit, reset, formState: { isSubmitting } } = useForm<ContactFormSchema>();
 
    async function onSubimit(data: ContactFormSchema) {
-      try{
+      try {
          await axios.post('apiDiscord', data)
          toast.success('Mensagem enviada com sucesso!')
          reset()
-      }catch{
+      } catch {
          toast.error('Ocorreu um erro ao enviar a mensagem.')
       }
-      // console.log(data)
    }
 
    return (
@@ -37,9 +36,13 @@ export function ContactForm() {
                subTitle="contato"
             />
 
-            <form
+            <motion.form
                onSubmit={handleSubmit(onSubimit)}
                className="flex flex-col gap-4 pt-10"
+               initial={{ opacity: 0, y: 100 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               exit={{ opacity: 0, x: 100 }}
+               transition={{ duration: 0.5 }}
             >
                <input
                   className="
@@ -100,7 +103,7 @@ export function ContactForm() {
                      <HiArrowNarrowRight size={18} />
                   </Button>
                </div>
-            </form>
+            </motion.form>
          </div>
       </div>
    )

@@ -52,7 +52,7 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0 }}
-                        transition={{ duration: 0.5, delay: 0.5 + i * 0.1 }}
+                        transition={{ duration: 0.5, delay: i * 0.1 }}
                      >
                         {item}
                      </motion.span>
