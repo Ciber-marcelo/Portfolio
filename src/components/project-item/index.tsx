@@ -1,10 +1,12 @@
+'use client'
+
 import Image from "next/image";
 import { HorizontalDivider } from "../horizontal-divider";
 import { BsFillSquareFill } from 'react-icons/bs'
 import { TbBrandGithub } from 'react-icons/tb'
 import { FiGlobe } from 'react-icons/fi'
-
 import { Button } from "../button";
+import { motion } from "framer-motion";
 
 type ProjectItensProps = {
    image: any
@@ -17,7 +19,12 @@ type ProjectItensProps = {
 
 export function ProjectItem({ image, title, text, link, repo, technologies }: ProjectItensProps) {
    return (
-      <div>
+      <motion.div
+         initial={{ opacity: 0, x: -100 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         exit={{ opacity: 0, x: -100 }}
+         transition={{ duration: 0.5 }}
+      >
          <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
             <Image
                className="w-full h-[200px] lg:w-[420px] lg:h-[300px] object-cover rounded-lg border-4 border-color1bg"
@@ -38,10 +45,17 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
                </p>
 
                <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
-                  {technologies.map((item) => (
-                     <span key={item} className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'>
+                  {technologies.map((item, i) => (
+                     <motion.span 
+                        key={item} 
+                        className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0 }}
+                        transition={{ duration: 0.5, delay: 0.5 + i * 0.1 }}
+                     >
                         {item}
-                     </span>
+                     </motion.span>
                   ))}
                </div>
 
@@ -64,6 +78,6 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
             </div>
          </div>
          <HorizontalDivider />
-      </div>
+      </motion.div>
    )
 }

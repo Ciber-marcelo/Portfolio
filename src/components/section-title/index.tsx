@@ -1,18 +1,36 @@
+'use client'
+
+import { motion } from "framer-motion"
+
 type TitleProps = {
    title: string
    subTitle: string
 }
 
-export function SectionTitle({ title, subTitle}: TitleProps) {
+export function SectionTitle({ title, subTitle }: TitleProps) {
+   const animationProps = {
+      initial: { opacity: 0, x: -100 },
+      whileInView: { opacity: 1, x: 0 },
+      exit: { opacity: 0, x: -100 },
+   }
+   
    return (
       <div className='flex flex-col gap-4'>
-         <span className="font-mono text-sm text-color1text">
-               ../{subTitle}
-         </span>
+         <motion.span 
+            className="font-mono text-sm text-color1text"
+            {...animationProps}
+            transition={{ duration: 0.5 }}
+         >
+            ../{subTitle}
+         </motion.span>
 
-         <h3 className="text-3xl font-medium">
+         <motion.h3 
+            className="text-3xl font-medium"
+            {...animationProps}
+            transition={{ duration: 0.5, delay: 0.2 }}
+         >
                {title}
-         </h3>
+         </motion.h3>
       </div>
    )
 }

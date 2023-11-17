@@ -1,8 +1,8 @@
-//"use client" serve para fazer alguns recursoso funcionarem no next, exemplo: "usePathName"
 'use client'
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 //"usePathname" serve para pegar o nome do href da pagina atual
 import { usePathname } from 'next/navigation';
 
@@ -22,7 +22,12 @@ export function Header() {
 
    return (
       <div className='bg-gradient-to-r from-gray-950 via-gray-900 to-color3bg'>
-         <div className='container flex items-center justify-between h-24'>
+         <motion.div
+            className='container flex items-center justify-between h-24'
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+         >
             <Link href="/">
                <Image
                   className='bg-color1bg rounded-full p-2'
@@ -45,7 +50,7 @@ export function Header() {
                   </Link>
                ))}
             </nav>
-         </div>
+         </motion.div>
       </div>
    )
 }

@@ -5,6 +5,7 @@ import { technologies } from '../../../public/jsons/technologies';
 import { contacts } from '../../../public/jsons/contacts';
 import { Button } from '../button';
 import { HiArrowNarrowRight } from 'react-icons/hi'
+import { motion } from "framer-motion"
 
 export function HeroSection() {
 
@@ -15,7 +16,13 @@ export function HeroSection() {
    return (
       <div className='bg-gradient-to-r from-gray-950 via-gray-900 to-color3bg'>
          <div className='container flex items-start justify-between lg:flex-row flex-col-reverse py-32 gap-y-6'>
-            <div className='w-full lg:max-w-[530px]'>
+            <motion.div
+               className='w-full lg:max-w-[530px]'
+               initial={{ opacity: 0, x: -100 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               exit={{ opacity: 0, x: -100 }}
+               transition={{ duration: 0.5 }}
+            >
                <p className='font-mono text-color1text'>Olá, meu nome é</p>
                <h2 className='text-4xl font-medium mt-2'>Marcelo Meira</h2>
 
@@ -27,10 +34,17 @@ export function HeroSection() {
                </p>
 
                <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
-                  {technologies.map((item) => (
-                     <span key={item.id} className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'>
+                  {technologies.map((item, i) => (
+                     <motion.span
+                        className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'
+                        key={item.id}
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0 }}
+                        transition={{ duration: 0.5, delay: i * 0.1 }}
+                     >
                         {item.name}
-                     </span>
+                     </motion.span>
                   ))}
                </div>
 
@@ -53,15 +67,22 @@ export function HeroSection() {
                      ))}
                   </div>
                </div>
-            </div>
+            </motion.div>
 
-            <Image
-               className='w-[300px] h-[300px] lg:w-[420px] lg:h-[420px] rounded-lg object-cover'
-               width={420}
-               height={420}
-               src='/images/foto-perfil.png'
-               alt='Foto de perfil do Marcelo'
-            />
+            <motion.div
+               initial={{ opacity: 0, x: 100, scale: 0.5 }}
+               whileInView={{ opacity: 1, x: 0, scale: 1 }}
+               exit={{ opacity: 0, x: 100, scale: 0.5 }}
+               transition={{ duration: 0.5 }}
+            >
+               <Image
+                  className='w-[300px] h-[300px] lg:w-[420px] lg:h-[420px] rounded-lg object-cover'
+                  width={420}
+                  height={420}
+                  src='/images/foto-perfil.png'
+                  alt='Foto de perfil do Marcelo'
+               />
+            </motion.div>
          </div>
       </div>
    )
