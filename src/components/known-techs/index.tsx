@@ -1,6 +1,6 @@
 'use client'
 
-import { Card } from "../card";
+import { TechCard } from "../techCard";
 import { SectionTitle } from "../section-title";
 import { techs } from "../../../public/jsons/techs";
 import { motion } from "framer-motion";
@@ -19,7 +19,7 @@ export function KnownTechs() {
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.2, delay: i * 0.1 }}
                >
-                  <Card
+                  <TechCard
                      key={item.id}
                      techName={item.techName}
                      experience={item.exp}
