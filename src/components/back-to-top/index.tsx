@@ -3,6 +3,7 @@
 import { Button } from "../button";
 import { TbArrowNarrowUp } from 'react-icons/tb'
 import { useState, useEffect, useCallback } from "react";
+import { motion } from 'framer-motion'
 
 export function BackToTop() {
    const [show, setShow] = useState(false);
@@ -25,9 +26,16 @@ export function BackToTop() {
    return (
       <div className=" fixed right-4 bottom-4 z-20">
          {show && (
-            <Button onClick={scrollToTop}>
-               <TbArrowNarrowUp size={18} />
-            </Button>
+            <motion.div
+               initial={{ opacity: 0, scale: 0 }}
+               whileInView={{ opacity: 1, scale: 1 }}
+               exit={{ opacity: 0, scale: 0 }}
+               transition={{ duration: 0.5 }}
+            >
+               <Button onClick={scrollToTop}>
+                  <TbArrowNarrowUp size={18} />
+               </Button>
+            </motion.div>
          )}
       </div>
    )
