@@ -1,11 +1,12 @@
 'use client'
 
 import Image from 'next/image';
-import { technologies } from '../../../public/jsons/technologies';
+import { technologies } from '../../../public/jsons/techsHero';
 import { contacts } from '../../../public/jsons/contacts';
 import { Button } from '../button';
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { motion } from "framer-motion"
+import { TechBadge } from '../techBadge';
 
 export function HeroSection() {
 
@@ -33,20 +34,7 @@ export function HeroSection() {
                   em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.
                </p>
 
-               <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
-                  {technologies.map((item, i) => (
-                     <motion.span
-                        className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'
-                        key={item.id}
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0 }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
-                     >
-                        {item.name}
-                     </motion.span>
-                  ))}
-               </div>
+               <TechBadge array={technologies} />
 
                <div className='mt-10 flex gap-5 flex-col lg:flex-row'>
                   <Button className='shadow-button' onClick={scrollToBottom}>

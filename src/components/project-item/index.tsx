@@ -7,6 +7,7 @@ import { TbBrandGithub } from 'react-icons/tb'
 import { FiGlobe } from 'react-icons/fi'
 import { Button } from "../button";
 import { motion } from "framer-motion";
+import { TechBadge } from "../techBadge";
 
 type ProjectItensProps = {
    image: any
@@ -40,24 +41,11 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
                   {title}
                </h3>
 
-               <p className="text-gray-400">
+               <p className="text-gray-400"> 
                   {text}
                </p>
 
-               <div className='flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]'>
-                  {technologies.map((item, i) => (
-                     <motion.span 
-                        key={item} 
-                        className='text-color1text bg-color1bg text-sm py-1 px-3 rounded-lg'
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0 }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
-                     >
-                        {item}
-                     </motion.span>
-                  ))}
-               </div>
+               <TechBadge array={technologies} />
 
                <div className="flex flex-col sm:flex-row gap-4">
                   <a className="flex flex-col" href={repo} target='blank'>
