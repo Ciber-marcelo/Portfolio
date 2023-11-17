@@ -25,6 +25,7 @@ O projeto foi feito utilizando das seguintes tecnologias:
 - Next JS
 - Typescript
 - Tailwind
+- Framer-motion
 
 Instruções:
 
@@ -44,7 +45,7 @@ Instruções:
 
 - Envio de formulário utilizando a API do Discord
 
-- Aplicação 100% responsiva
+- Aplicação 100% responsiva e animada com framer-motion
 
 ---
 
