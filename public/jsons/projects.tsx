@@ -37,14 +37,15 @@ export const projects = [
       id: 3,
       image: blueLock,
       title: 'Blue Lock',
-      text: 'Blue Lock é uma aplicação feita para ranquear e listar as principais habilidades dos personagens do manga Blue Block utilizando a biblioteca React-apex-charts.',
+      text: 'Blue Lock é uma aplicação web feita para listar as estatísticas dos personagens do manga Blue Block e criar formações de futebol utilizando os personagens.',
       repo: 'https://github.com/Ciber-marcelo/blue-lock',
       link: 'https://blue-lock-marcelones.vercel.app/',
       technologies: [
          'Next.js', 
          'TypeScript', 
          'Tailwind.css',
-         'React-Apex-Charts'
+         'React-Apex-Charts',
+         'Dnd-kit/core'
       ]
    },
 ];
