@@ -67,7 +67,7 @@ export function HeroSection() {
                   className='w-[300px] h-[300px] lg:w-[420px] lg:h-[420px] rounded-lg object-cover'
                   width={420}
                   height={420}
-                  src='/images/foto-perfil.png'
+                  src='/images/foto.png'
                   alt='Foto de perfil do Marcelo'
                />
             </motion.div>
