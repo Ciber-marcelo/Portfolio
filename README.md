@@ -1,5 +1,5 @@
 
-<img alt="Logo" src="https://cdn.discordapp.com/attachments/794432010441064468/1164348483621376000/image.png?ex=6604af87&is=65f23a87&hm=de220ebd860744b4c03da0c28cb558044f81e3b6cba25ab94f0c9c7e630993ec&" width="100%">
+<img alt="Logo" src="https://i.imgur.com/F0cgZX8.png" width="100%">
 
 ## Indice
 
