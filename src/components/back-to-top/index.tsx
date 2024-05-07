@@ -24,7 +24,7 @@ export function BackToTop() {
    }
 
    return (
-      <div className=" fixed right-4 bottom-4 z-20">
+      <div className="fixed right-4 bottom-4 z-20">
          {show && (
             <motion.div
                initial={{ opacity: 0, scale: 0 }}
@@ -32,7 +32,7 @@ export function BackToTop() {
                exit={{ opacity: 0, scale: 0 }}
                transition={{ duration: 0.5 }}
             >
-               <Button onClick={scrollToTop}>
+               <Button onClick={scrollToTop} className="opacity-80">
                   <TbArrowNarrowUp size={18} />
                </Button>
             </motion.div>
