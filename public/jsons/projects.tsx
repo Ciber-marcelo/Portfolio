@@ -1,6 +1,7 @@
-import pokedex from '../projects-images/ProjectPokedex.svg'
-import portfolio from '../projects-images/ProjectPortfolio.svg'
-import blueLock from '../projects-images/ProjectBlueLock.svg'
+import pokedex from '../projects-images/ProjectPokedex.svg';
+import portfolio from '../projects-images/ProjectPortfolio.svg';
+import blueLock from '../projects-images/ProjectBlueLock.svg';
+import battleOfHeroes from '../projects-images/ProjectBattleOfHeroes.svg';
 
 export const projects = [
    {
@@ -45,7 +46,22 @@ export const projects = [
          'TypeScript', 
          'Tailwind.css',
          'React-Apex-Charts',
-         'Dnd-kit/core'
+         'Dnd-kit/core',
+         'Context API',
+      ]
+   },
+   {
+      id: 4,
+      image: battleOfHeroes,
+      title: 'Battle of Heroes',
+      text: 'Battle of heroes é uma aplicação web feita para listar e comparar estatísticas de super herois de quadrinhos e filmes.',
+      repo: 'https://github.com/Ciber-marcelo/battle-of-heroes',
+      link: 'https://battle-of-heroes-marcelones.vercel.app/',
+      technologies: [
+         'Next.js', 
+         'TypeScript', 
+         'Sass',
+         'Context API',
       ]
    },
 ];
