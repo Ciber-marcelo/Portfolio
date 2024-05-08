@@ -22,7 +22,7 @@ export function ExperienceItem({ companyName, initial, officeName, time, text, t
          transition={{ duration: 0.5 }}
       >
          <div className=" w-12 flex flex-col items-center gap-4">
-            <span className="flex p-2 justify-center items-center h-[40px] w-[40px] rounded-full border-[2px] bg-color3bg text-gray-500 border-gray-500 font-medium">
+            <span className="flex p-2 justify-center items-center h-[40px] w-[40px] rounded-full border-[2px] bg-color3bg text-color4text border-gray-500 font-medium">
                {initial}
             </span>
 
@@ -30,11 +30,11 @@ export function ExperienceItem({ companyName, initial, officeName, time, text, t
          </div>
 
          <div className="flex flex-col gap-2 pb-8">
-            <p className="text-gray-500">{companyName}</p>
-            <h4 className="text-gray-300">{officeName}</h4>
-            <p className="text-gray-500">{time}</p>
-            <p className="text-gray-400">{text}</p>
-            <p className="text-gray-400 text-sm mt-6 font-semibold">Competências</p>
+            <p className="text-color4text">{companyName}</p>
+            <h4 className="text-color2text">{officeName}</h4>
+            <p className="text-color4text">{time}</p>
+            <p className="text-color3text">{text}</p>
+            <p className="text-color3text text-sm mt-6 font-semibold">Competências</p>
             <TechBadge array={technologies} />
          </div>
       </motion.div>

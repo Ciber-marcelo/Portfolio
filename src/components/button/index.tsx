@@ -11,7 +11,7 @@ export function Button({ children, className, ...props }: ButtonProps) {
         py-3 
         px-4 
         rounded-lg 
-        text-gray-50 
+        text-color2text 
         flex 
         justify-center 
         items-center 

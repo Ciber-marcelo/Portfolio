@@ -25,11 +25,11 @@ export function HeroSection() {
                transition={{ duration: 0.5 }}
             >
                <p className='font-mono text-color1text'>Olá, meu nome é</p>
-               <h2 className='text-4xl font-medium mt-2'>Marcelo Meira</h2>
+               <h2 className='text-4xl font-medium mt-2 text-color2text'>Marcelo Meira</h2>
 
-               <p className='text-gray-400 my-6'>
-                  Olá, meu nome é <b className='text-gray-50'>Marcelo Meira</b> e sou um desenvolvedor full-stack
-                  JavaScript. Com mais de <b className='text-gray-50'>2 anos de experiência</b>.
+               <p className='text-color3text my-6'>
+                  Olá, meu nome é <b className='text-color2text'>Marcelo Meira</b> e sou um desenvolvedor full-stack
+                  JavaScript. Com mais de <b className='text-color2text'>2 anos de experiência</b>.
                   Meu objetivo é criar interfaces web/mobile funcionais, além de participar de equipes técnicas
                   em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.
                </p>

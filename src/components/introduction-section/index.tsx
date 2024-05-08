@@ -26,11 +26,11 @@ export function IntroductionSection() {
                   {...animationProps}
                   transition={{ duration: 0.5, delay: 0.2 }}
                >
-                  <h2 className='text-4xl font-medium mt-2 flex justify-center'>
+                  <h2 className='text-4xl text-color2text font-medium mt-2 flex justify-center'>
                      Meus Projetos
                   </h2>
 
-                  <p className='text-gray-400 my-6 text-center'>
+                  <p className='text-color3text my-6 text-center'>
                      Aqui você poderá ver alguns dos trabalhos que eu desenvolvi.
                      Navegue à vontade e explore os projetos para ver como foram criados,
                      as tecnologias utilizadas e as funcionalidades implementadas.
@@ -42,7 +42,7 @@ export function IntroductionSection() {
                   {...animationProps}
                   transition={{ duration: 0.5, delay: 0.3 }}
                >
-                  <a href="/" className='flex gap-2 items-center hover:text-color1text transition'>
+                  <a href="/" className='flex gap-2 items-center text-color2text hover:text-color1text transition'>
                      <HiArrowNarrowLeft size='18' />
                      Voltar para Home
                   </a>

@@ -10,7 +10,7 @@ export function WorkExperience() {
                subTitle="experiências"
                title="Experiência Profissional"
             />
-            <p className="text-gray-400 mt-6">
+            <p className="text-color3text mt-6">
                Estou sempre aberto a novos desafios e projetos. Vamos
                trabalhar juntos para criar soluções incríveis para sua empresa !
             </p>

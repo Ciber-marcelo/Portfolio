@@ -36,12 +36,12 @@ export function ProjectItem({ image, title, text, link, repo, technologies }: Pr
             />
 
             <div className="flex flex-col gap-6">
-               <h3 className="flex items-center gap-3 font-medium text-lg text-gray-50">
+               <h3 className="flex items-center gap-3 font-medium text-lg text-color2text">
                   <BsFillSquareFill />
                   {title}
                </h3>
 
-               <p className="text-gray-400"> 
+               <p className="text-color3text"> 
                   {text}
                </p>
 

@@ -29,7 +29,7 @@ export function ContactForm() {
    }
 
    return (
-      <div className="flex pb-16 pt-32 px-6 justify-center items-center bg-gray-950">
+      <div className="flex pb-16 pt-32 px-6 justify-center items-center bg-color4bg">
          <div className="max-w-[420px]">
             <SectionTitle
                title="Vamos trabalhar juntos ? Entre em contato"
@@ -51,8 +51,8 @@ export function ContactForm() {
                   p-4 
                   rounded-lg 
                   bg-gray-800 
-                  text-gray-50 
-                  placeholder:text-gray-400
+                  text-color2text 
+                  placeholder:text-color3text
                   focus:outline-none
                   focus:ring-2
                   ring-color1bg
@@ -68,8 +68,8 @@ export function ContactForm() {
                   p-4 
                   rounded-lg 
                   bg-gray-800 
-                  text-gray-50 
-                  placeholder:text-gray-400
+                  text-color2text 
+                  placeholder:text-color3text
                   focus:outline-none
                   focus:ring-2
                   ring-color1bg
@@ -85,8 +85,8 @@ export function ContactForm() {
                   p-4
                   rounded-lg
                   bg-gray-800
-                  text-gray-50 
-                  placeholder:text-gray-400
+                  text-color2text 
+                  placeholder:text-color3text
                   focus:outline-none
                   focus:ring-2
                   ring-color1bg

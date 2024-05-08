@@ -43,7 +43,7 @@ export function Header() {
                   <Link
                      href={item.href}
                      key={item.label}
-                     className={pathname === item.href ? 'text-gray-50' : 'text-gray-400'}
+                     className={pathname === item.href ? 'text-color2text' : 'text-color3text'}
                   >
                      <span className='text-color1text'># </span>
                      {item.label}

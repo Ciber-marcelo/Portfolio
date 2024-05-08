@@ -25,7 +25,7 @@ export function SectionTitle({ title, subTitle }: TitleProps) {
          </motion.span>
 
          <motion.h3 
-            className="text-3xl font-medium"
+            className="text-3xl font-medium text-color2text"
             {...animationProps}
             transition={{ duration: 0.5, delay: 0.2 }}
          >

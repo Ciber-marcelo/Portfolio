@@ -21,8 +21,8 @@ export function MainProjects() {
             />
          ))}
          <p className="flex items-center gap-2">
-            <span className="text-gray-400">Se interessou ?</span>
-            <a href="/projects" className="flex gap-2 hover:text-color1text transition">
+            <span className="text-color3text">Se interessou ?</span>
+            <a href="/projects" className="flex gap-2 text-color2text hover:text-color1text transition">
                Ver todos os projetos
                <HiArrowNarrowRight size={20}/>
             </a>
