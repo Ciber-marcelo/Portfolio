@@ -1,8 +1,8 @@
 export const technologies = [
-   'Next.js',
+   'React.js',
    'TypeScript',
    'Tailwind.css',
-   'Prisma.js',
+   'Node.js',
    'Git e Github',
    'Figma',
 ];
