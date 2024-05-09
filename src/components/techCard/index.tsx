@@ -11,7 +11,7 @@ export function TechCard({ techName, experience, icon }: CardProps) {
             <p>{techName}</p>
             <p>{experience} de experiência</p>
          </div>
-         <p>{icon}</p>
+         <div>{icon}</div>
       </div>
    )
 }
