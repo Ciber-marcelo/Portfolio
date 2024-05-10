@@ -1,7 +1,6 @@
-//'use client' serve para o toaster funcionar no next
-//como usar o 'react-hot-toast' no next: 'https://www.youtube.com/watch?v=RVGRPleYFUI&list=PLY_G6KZ7jlfU41bdaWpTsOnfCC7bmpJcL&index=15&ab_channel=GBDev'
 'use client'
 
+//como usar o 'react-hot-toast' no next: 'https://www.youtube.com/watch?v=RVGRPleYFUI&list=PLY_G6KZ7jlfU41bdaWpTsOnfCC7bmpJcL&index=15&ab_channel=GBDev'
 import { Toaster as ToasterProvider } from 'react-hot-toast'
 
 export function Toaster() {

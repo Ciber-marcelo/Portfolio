@@ -29,7 +29,7 @@ export function HeroSection() {
 
                <p className='text-color3text my-6'>
                   Olá, meu nome é <b className='text-color2text'>Marcelo Meira</b> e sou um desenvolvedor full-stack
-                  JavaScript. Com mais de <b className='text-color2text'>2 anos de experiência</b>.
+                  JavaScript. Com mais de <b className='text-color2text'>3 anos de experiência</b>.
                   Meu objetivo é criar interfaces web/mobile funcionais, além de participar de equipes técnicas
                   em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.
                </p>
